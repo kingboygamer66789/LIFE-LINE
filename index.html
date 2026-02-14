@@ -1,121 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CourseKart | Learn Anything, Anytime</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="top-nav">
-      <div class="brand">CourseKart</div>
-      <div class="search-wrap">
-        <input id="searchInput" type="text" placeholder="Search for coding, fitness, design, business..." />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CourseKart Versions Hub</title>
+  <style>
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:#0b1020;color:#eef2ff}
+    .wrap{max-width:1100px;margin:0 auto;padding:48px 20px}
+    h1{font-size:2.3rem;margin:0 0 8px}
+    p{color:#b8c2e0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:24px}
+    .card{background:#151d36;border:1px solid #2c3b6b;border-radius:14px;padding:18px}
+    .card h3{margin:0 0 8px}
+    .btn{display:inline-block;margin-top:10px;padding:10px 14px;border-radius:10px;text-decoration:none;color:#031024;background:linear-gradient(120deg,#00d4ff,#7a5cff);font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>CourseKart — All Website Versions</h1>
+    <p>Pick any version below. This setup is ready for GitHub Pages deployment so every version has its own URL path.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Version 1: Original Neon Marketplace</h3>
+        <p>Amazon-inspired course storefront with search and category-focused CTA sections.</p>
+        <a class="btn" href="./v1/">Open v1</a>
       </div>
-      <nav class="menu">
-        <a href="#categories">Categories</a>
-        <a href="#deals">Best Deals</a>
-        <a href="#testimonials">Reviews</a>
-      </nav>
-      <button class="cta">Get Started</button>
-    </header>
-
-    <section class="hero">
-      <div class="hero-content">
-        <p class="badge">#1 Trending Learning Marketplace</p>
-        <h1>Shop Courses Like You Shop on Amazon.</h1>
-        <p>
-          Discover premium courses in Coding, Education, Fitness, Marketing, Finance, Photography,
-          and more — curated by top instructors and loved by 1M+ learners.
-        </p>
-        <div class="hero-buttons">
-          <button class="cta">Explore Courses</button>
-          <button class="ghost">Watch Demo</button>
-        </div>
+      <div class="card">
+        <h3>Version 2: Bright Pro Theme</h3>
+        <p>Cleaner, brighter visual style for educational and corporate audiences.</p>
+        <a class="btn" href="./v2/">Open v2</a>
       </div>
-      <div class="hero-card">
-        <h3>Today’s Flash Bundle</h3>
-        <p class="bundle-title">Full-Stack + AI + Fitness Habit Mastery</p>
-        <p class="price"><span>$399</span> $89</p>
-        <p class="sub">Limited seats • Lifetime access • Certificate included</p>
-        <button class="cta full">Grab Offer</button>
+      <div class="card">
+        <h3>Version 3: Dark Glass Theme</h3>
+        <p>Premium dark-glass look with high-contrast accents for modern branding.</p>
+        <a class="btn" href="./v3/">Open v3</a>
       </div>
-    </section>
-
-    <main>
-      <section id="categories" class="section">
-        <div class="section-head">
-          <h2>Popular Categories</h2>
-          <p>Choose your purpose and start leveling up today.</p>
-        </div>
-        <div class="category-grid">
-          <article class="category-card">💻 Coding & Development</article>
-          <article class="category-card">🎓 Academic Education</article>
-          <article class="category-card">🏋️ Fitness & Wellness</article>
-          <article class="category-card">📈 Business & Marketing</article>
-          <article class="category-card">🎨 Design & Creativity</article>
-          <article class="category-card">🗣️ Communication Skills</article>
-        </div>
-      </section>
-
-      <section id="deals" class="section">
-        <div class="section-head">
-          <h2>Hot Courses For You</h2>
-          <p>Amazon-style cards with clear value and instant trust signals.</p>
-        </div>
-        <div id="courseGrid" class="course-grid"></div>
-      </section>
-
-      <section class="section promo">
-        <h2>Why Customers Buy Instantly</h2>
-        <div class="reasons">
-          <div>
-            <h4>✅ Verified Instructors</h4>
-            <p>Every instructor is vetted for expertise and student satisfaction.</p>
-          </div>
-          <div>
-            <h4>⚡ Fast, Bite-Sized Lessons</h4>
-            <p>Busy schedule? Learn in short practical modules with real projects.</p>
-          </div>
-          <div>
-            <h4>🛡️ 7-Day Money Back Guarantee</h4>
-            <p>No risk. If it’s not right for you, get a full refund.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="testimonials" class="section testimonials">
-        <div class="section-head">
-          <h2>Customer Love</h2>
-          <p>Real buyers. Real growth.</p>
-        </div>
-        <div class="review-grid">
-          <blockquote>
-            "I bought one coding course and ended up changing careers in 5 months. Worth every dollar."
-            <cite>— Sarah K.</cite>
-          </blockquote>
-          <blockquote>
-            "The fitness + nutrition bundle kept me consistent for the first time. Amazing structure."
-            <cite>— Dev M.</cite>
-          </blockquote>
-          <blockquote>
-            "Looks premium, easy to browse, and the courses are genuinely useful."
-            <cite>— Priya R.</cite>
-          </blockquote>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>© 2026 CourseKart — Learn smart. Grow faster.</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+    </div>
+  </div>
+</body>
 </html>
